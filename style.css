@@ -1,0 +1,121 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+html {
+  font-family: 'Montserrat', Arial, sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+ 
+body{
+    background: #F2F3EB;
+}
+
+
+#FormInicio, #FormInicioA{
+    border: solid 3px #474544;
+    max-width: 768px;
+    margin: 60px auto;
+    position: relative;
+}
+
+#FormDatos, #FormAsignatura{
+  border: solid 3px #474544;
+  max-width: 768px;
+  margin: 60px auto;
+  position: relative;
+}
+
+#ConsultaTable{
+  border: solid 3px #474544;
+  max-width: 768px;
+  margin: 60px auto;
+  position: relative;
+}
+#tablitabonita{
+  border: solid 3px #474544;
+  margin: auto;
+  position: relative;
+}
+#FormDatos h4, #myFormularioCampers{
+  align-content: center;
+  text-align: center;
+}
+
+#FormInicio h4, #myFormularioCampus{
+  align-content: center;
+  text-align: center;
+}
+
+#FormInicioA h4, #myFormularioInicioA{
+  align-content: center;
+  text-align: center;
+}
+
+#FormAsignatura h4, #myFormularioAsignatura{
+  align-content: center;
+  text-align: center;
+}
+
+#ConsultaTabletos h4, #ConsultaCamper, #ConsultaDatos, #ConsultaSede, #ConsultaTecno{
+  align-content: center;
+  text-align: center;
+}
+.underline {
+  border-bottom: solid 2px #474544;
+  margin: -0.512em auto;
+  width: 80px;
+}
+
+.div_hide {
+    display: none;
+  }
+
+
+#botonInicio {
+  background: none;
+  border: solid 2px #474544;
+  color: #474544;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Helvetica', Arial, sans-serif;
+  font-size: 0.875em;
+  font-weight: bold;
+  outline: none;
+  padding: 20px 35px;
+  }
+#BotonFinal {
+    background: none;
+    border: solid 2px #474544;
+    color: #474544;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Helvetica', Arial, sans-serif;
+    font-size: 0.875em;
+    font-weight: bold;
+    outline: none;
+    padding: 20px 35px;
+  }
+
+input[type='text'], [type='email'], select, [type='number'], [type='tel'] {
+  background: none;
+  border: none;    
+  border-bottom: solid 2px #474544;
+  color: #474544;
+  font-size: 1.000em;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 0em 0 1.875em 0;
+  padding: 0 0 0.875em 0;
+  width: 100%;
+  box-sizing: border-box;
+  }
+  
+#botonInicio:hover {
+  background: #474544;
+  color: #F2F3EB;
+  }
+#BotonFinal:hover {
+  background: #474544;
+  color: #F2F3EB;
+  }

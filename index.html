@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <title>Taller3</title>
+</head>
+    <fieldset id="FormInicio">
+        <legend>Sede Campu</legend>
+        <h4 id="text1">Ingresa la sede a registrar</h4>
+        <div class="underline">
+        </div><br>
+        <form id="myFormularioCampus">
+            <input type="text" name="nombreSede" placeholder="nombre de la sede"><br>
+            <input type="tel" name="telefonoSede" placeholder="Telefono de la Sede"><br>
+            <input type="text" name="direccionSede" placeholder="Direccion de la Sede"><br>
+            <input type="submit" value="Guardar" id="botonInicio">
+        </form>
+    </fieldset>
+    <fieldset id="FormDatos">
+        <legend>Datos de los Usuarios del  CAMPUS</legend>
+        <form id="myFormularioCampers">
+            <fieldset>
+                <legend>Datos De Regitro</legend>
+                <h4 id="text1">Ingresa tus datos iniciales</h4>
+                <div class="underline">
+                </div><br>
+                <select name="sede"></select>
+                <input type="text" name="nombre" placeholder="Nombre del Usuario">
+                <input type="tel" name="telefono" placeholder="Telefono del Usuario"><br>
+                <input type="email" name="Correo" placeholder="Correo del Usuario"><br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Rol y Team Del Usuario</legend>
+                <h4 id="text1">Ingresa el rol y team que pertenezcas</h4>
+                <div class="underline">
+                </div><br>
+                <select name="Rol">
+                    <option value="trainer">Seleccione El Rol</option>
+                    <option value="trainer">Trainer</option>
+                    <option value="camper">Camper</option>
+                </select>
+                <select name="Teams">
+                    <option value="Team1">Team1</option>
+                    <option value="Team2">Team2</option>
+                    <option value="Team3">Team3</option>
+                    <option value="Team4">Team4</option>
+                </select><br><br>
+            </fieldset><br>
+            <fieldset name="Time">
+                <legend>Selecciona el horario de las Clases</legend> <br>
+                    <h4 id="text1">Ingresa las horas de tus clases</h4>
+                    <div class="underline">
+                    </div><br>
+                    Horario jornada Completa => <input type="time" name="horarioInicio" > ---
+                        <input type="time" name="horarioFinal" > <br><br>
+                    <div id="CamperTimer">
+                        Horario Clase Ser => <input type="time" name="horario entrada Ser" > --- <input type="time" name="horario salida Ser" > <br> <br>
+                        Horario Clase Ingles => <input type="time" name="horario entrada Ingles" > --- <input type="time" name="horario salida Ingles" ><br> <br>
+                    </div>
+                    <div id="TrainerTimer">
+                        <h4 id="text1">Ingresa las Modalidad de la  Asignatura</h4>
+                        <div class="underline">
+                        </div><br>
+                        <input type="radio" name="Modalidad" value="Presencial">Presencial <input type="radio" name="Modalidad" value="Virtual">Virtual<br>
+                        <h4 id="text1">Selecciona La Disponibilidad Del Sandbox</h4>
+                        <div class="underline">
+                        </div><br>
+                        Sandbox: <input type="radio" name="sandBoxtecnologia" value="Disponible">Disponible <input type="radio" name="sandBoxtecnologia" value="Ocupado">Ocupado
+                    </div>
+            </fieldset>
+            <fieldset>
+                <legend>Ingresa el Salon y el Piso del Usuario</legend>
+                <br>
+                <input type="text" name="Salon" placeholder="Ingrese el Salon del usuario"><br><br>
+                <input type="text" name="Piso" placeholder="Ingrese el piso del usuario"><br><br>
+            </fieldset>
+            <fieldset id="CamperDC">
+                <legend>Datos Complementarios</legend>
+                <h4 id="text1">Ingresa tus datos acerca tu formación</h4>
+                <div class="underline">
+                </div><br>
+                <br><select name="Nivel">
+                    <option value="Principiante">Principiante</option>
+                    <option value="Basico">Basico</option>
+                    <option value="Intermedio">Intermedio</option>
+                    <option value="Avanzado">Avanzado</option>
+                </select><br><br>
+                <input type="text" name="Barrio" placeholder="Barrio al que perteneces"><br>
+                <br><select name="Transporte">
+                    <option value="Carro">Carro</option>
+                    <option value="Moto">Moto</option>
+                    <option value="Bus">Bus</option>
+                    <option value="A pata">A pata</option>
+                </select><br><br>
+            </fieldset>
+            <fieldset>
+                <legend>Clasificacion Segun El Nivel</legend>
+                <h4 id="text1">Ingresa tus datos de aprendizaje</h4>
+                <div class="underline">
+                </div><br>
+                <br><input type="text" name="preRequisito" placeholder="Pre-requisitos Del Nivel"><br><br>
+                <input type="text" name="tecnologia" placeholder="A que tecnologia perteneces"><br>
+                Tipo de tecnologia: <input type="radio" name="tipo de tecnologia" value="Efectiva">Electiva <input type="radio" name="tipo de tecnologia" value="Obligatoria">Obligatoria
+            </fieldset>
+            <fieldset>
+                <legend>RoadMap</legend>
+                <h4 id="text1">Ingresa tu RoadMap</h4>
+                <div class="underline">
+                </div><br>
+                <br><input type="number" name="Creditos" placeholder="Nro de créditos"><br><br>
+                <input type="number" name="AñoCreditos" placeholder="Año del Credito"><br><br>
+                <input type="number" name="Asignaturas" placeholder="Nro de Asignaturas"><br><br>
+            </fieldset>
+            <br>
+            <input type="submit" value="Guardar" id="BotonFinal">
+        </form>
+    </fieldset>
+
+    <fieldset id="ConsultaTable">
+        <legend>Consultas</legend>
+        <fieldset id="ConsultaCamper">
+            <legend>Campers</legend>
+            <table class="default" id="tablitabonita">
+                <tr>
+            
+                <th>Camper</th>
+            
+                <th>Salon</th>
+
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset id="ConsultaDatos">
+            <legend>Trainers</legend>
+            <table class="default" id="tablitabonita">
+                <tr>
+            
+                <th>Trainer</th>
+            
+                <th>Modalidad</th>
+
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset id="ConsultaSede">
+            <legend>Datos De Contacto</legend>
+            <table class="default" id="tablitabonita">
+                <tr>
+            
+                <th>Sede</th>
+            
+                <th>Telefono</th>
+
+                <th>Dirrecion</th>
+
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset id="ConsultaTecno">
+            <legend>Datos De La Tecnologia</legend>
+            <table class="default" id="tablitabonita">
+                <tr>
+            
+                <th>sandBox</th>
+            
+                <th>prerequisito</th>
+
+                <th>nro de créditos </th>
+                </tr>
+            </table>
+        </fieldset>
+    </fieldset>
+
+    
+    <fieldset id="FormInicioA">
+        <legend>Asignatura</legend>
+        <h4 id="text1">Ingresa la Asignatura</h4>
+        <div class="underline">
+        </div><br>
+        <form id="myFormularioInicioA">
+            <input type="text" name="Asignatura" placeholder="nombre de la Asignatura">
+            <input type="submit" value="Guardar" id="botonInicio">
+        </form>
+    </fieldset>
+    <fieldset id="FormAsignatura">
+        <legend>Datos de la Asignatura</legend>
+        <form id="myFormularioAsignatura">
+            <fieldset>
+                <legend>Datos del Aprendizaje</legend>
+                <h4 id="text1">Ingresa los datos correspondientes al Camper</h4>
+                <div class="underline">
+                </div><br>
+                <select name="MATERIA"></select>
+                <input type="text" name="nombreCamper" placeholder="Nombre del Camper">
+                <input type="number" name="Nota1" placeholder="Ingrese la nota1 del usuario">
+                <input type="number" name="Nota2" placeholder="Ingrese la nota2 del Usuario"><br>
+                <input type="number" name="Nota3" placeholder="Ingrese la nota3 del Usuario"><br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Examenes y Observaciones</legend>
+                <h4 id="text1">Notas correspondiente a los Examenes</h4>
+                <div class="underline">
+                </div><br>
+                <input type="number" name="Examen1" placeholder="Ingrese la nota del examen 1 del usuario">
+                <input type="number" name="Examen2" placeholder="Ingrese la nota del examen 2 del Usuario"><br>
+                <h4 id="text1">AutoEvaluacion</h4>
+                <div class="underline">
+                </div><br>
+                <select name="AutoEvaluacion">
+                    <option value="Bajo">Bajo</option>
+                    <option value="Basico">Basico</option>
+                    <option value="Alto">Alto</option>
+                    <option value="Superior">Superior</option>
+                </select><br><br>
+                <h4 id="text1">heteroEvaluación</h4>
+                <div class="underline">
+                </div><br>
+                <select name="heteroevaluación ">
+                    <option value="Bajo">Bajo</option>
+                    <option value="Basico">Basico</option>
+                    <option value="Alto">Alto</option>
+                    <option value="Superior">Superior</option>
+                </select><br>
+            <input type="submit" value="Guardar" id="botonInicio">
+            </fieldset><br>
+        </form>
+    </fieldset>
+</body>
+</html>
